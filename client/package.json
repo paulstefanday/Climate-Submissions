@@ -1,0 +1,29 @@
+{
+  "name": "newtracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compiled.js",
+  "scripts": {
+    "start": "watch 'npm run js' 'src/'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "browserify src/index.js -o index.js -g es2040 -i mock-browser"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "choo": "4.0.1",
+    "countup.js": "^1.7.1",
+    "flag-icon-css": "^2.8.0",
+    "font-awesome": "^4.7.0",
+    "gsap": "^1.19.0",
+    "moment-countdown": "0.0.3",
+    "sheet-router": "^4.1.4",
+    "tachyons": "^4.5.5",
+    "xhr": "^2.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "es2040": "^1.2.4",
+    "watch": "^1.0.1"
+  }
+}

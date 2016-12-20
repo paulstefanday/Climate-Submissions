@@ -1,0 +1,164 @@
+.content-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:440px;
+}
+
+.o-orange {
+  background-color: rgba(255, 76, 0, 0.89);
+}
+
+.scroll {
+  overflow-y:auto;overflow-x:hidden;
+}
+
+.g-o-orange {
+  background: -moz-linear-gradient(0deg, rgba(255,76,0,0.7) 0%, rgba(255,76,0,0.25) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,76,0,1)), color-stop(100%, rgba(255,76,0,0.25))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(255,76,0,0.7) 0%, rgba(255,76,0,0.25) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(255,76,0,0.7) 0%, rgba(255,76,0,0.25) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(255,76,0,0.7) 0%, rgba(255,76,0,0.25) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(255,76,0,0.7) 0%, rgba(255,76,0,0.25) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c00', endColorstr='#ff4c00',GradientType=1 ); /* ie6-9 */
+}
+
+.g-o-black {
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0.25))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.25) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c00', endColorstr='#ff4c00',GradientType=1 ); /* ie6-9 */
+}
+
+.bg-hot-pink {
+  background-color: #e91e63
+}
+
+    .f8 {
+      font-size:0.6rem;
+    }
+
+    .f7 {
+      font-size:0.9rem;
+    }
+
+    .preview {
+      height:240px;
+    }
+
+    p, span {
+      line-height: 1.5em;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+
+    body {
+      font-family: 'Lato', sans-serif;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+
+    .fw9, .montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    button  {
+      letter-spacing: 0.3em
+    }
+
+    .box-shadow {
+      box-shadow: -19px 50px 0px rgba(255, 148, 62, 0.55);
+    }
+
+    .f1 {
+      font-size: 2.5rem;
+    }
+
+    html {
+      height: 100%;
+      background-color: #ff6701;
+      background-position: center top;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
+    .bg-grey {
+      background-color: #ececec;
+    }
+
+
+    .Container {
+      max-width: 630px;
+      z-index: -100;
+      position: absolute;
+      bottom: -30px;
+      left: -100px;
+    }
+
+    .Map-container {
+      position: relative;
+    }
+
+    #Map-svg {
+      width: 900px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .left-fixed {
+      position: absolute;top: 0;left: 0;height: 100%;
+    }
+
+    .right-fixed {
+      position: absolute;top: 0;right: 0;height: 100%;
+    }
+
+    .bg-orange {
+      background-color: #fe7200;
+    }
+
+    .orange {
+      color: #ff6701;
+    }
+
+    .bg-dark-orange {
+      background-color: #da3e02;
+    }
+
+    .dark-orange {
+      color:#da3e02;
+    }
+
+    .lh-0 {
+      line-height: 0;
+    }
+
+    .bg-black-10 {
+      background-color: #eee
+    }
+
+    .h0 {
+      height:5px;
+    }
+
+    .bg-white-10 {
+        background-color: hsla(0, 0%, 100%, 0.06);
+    }
+
+    .bw1 {
+      border-width: .025rem;
+    }
+
+    .grad-orange {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4c00+0,fe7200+86 */
+      background: #ff4c00; /* Old browsers */
+      background: -moz-linear-gradient(0deg,  #ff4c00 0%, #fe7200 86%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(0deg,  #ff4c00 0%,#fe7200 86%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(0deg,  #ff4c00 0%,#fe7200 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c00', endColorstr='#fe7200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
