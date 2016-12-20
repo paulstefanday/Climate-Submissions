@@ -11,7 +11,7 @@ const stat = ({ stat, text }) => html`
 
 const sidebar = (state, prev, send) => html`
 <div class="w-25-ns w-100 h-100 left-fixed bg-center white-50 montserrat" onload=${() => send('getStats')}>
-	<img src="/static/appv2/images/logo-white-sm.png" class="pa4" style="width:190px;" />
+	<img src="/static/images/logo-white-sm.png" class="pa4" style="width:190px;" />
 	${stat({ stat: state.stats.journalists, text: 'Journalists' })}
 	${stat({ stat: state.stats.articles, text: 'Articles' })}
 	${stat({ stat: state.stats.competitions, text: 'Live Competitions' })}
@@ -52,7 +52,7 @@ const prize = (comp, state, send) => html`
 
 const overlay = (comp, state, send) => {
 	let finished = moment(comp.finish).isBefore(new Date())
-	let open = e => send('location:set', '/v2/competition/'+comp.id+'/introduction')
+	let open = e => send('location:set', '/competition/'+comp.id+'/introduction')
 	return finished ?
 				html`
 				<div class="child g-o-orange absolute w-100 h-100 top-0 left-0 tc ">
@@ -68,7 +68,7 @@ const overlay = (comp, state, send) => {
 const item = (comp, state, send) => {
 
 	// open competition
-	let open = e => send('location:set', '/v2/competition/'+comp.id+'/introduction')
+	let open = e => send('location:set', '/competition/'+comp.id+'/introduction')
 
 	// check if competition has finished
 	let finished = moment(comp.finish).isBefore(new Date())

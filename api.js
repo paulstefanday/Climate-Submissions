@@ -1,16 +1,14 @@
 'use strict'
 
-const { m, r } = require('../models/thinky')
-const { Competition } = require('../models')
-const Email = require('../settings/email')
+const { Competition } = require('climate-core/models')
+const { r, m } = require('climate-core/models/thinky')
+const user = require(`climate-core/settings/permissions`)
 
 exports.stats = function *() {
   let journalists = yield r.table('users').count()
   let articles = yield r.table('submissions').count()
 
-  this.body = {
-    journalists, articles
-  }
+  this.body = { journalists, articles }
 }
 
 
@@ -18,7 +16,6 @@ exports.me = function *(direct) {
 
   let joined
   let competitions
-  console.log(this)
   if(this && this.user) {
     joined = yield r.table('competitions_users').filter({ user_id: this.user.id })
     competitions = yield Competition

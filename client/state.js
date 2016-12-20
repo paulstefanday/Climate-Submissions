@@ -7,6 +7,6 @@ module.exports = {
 		"bg-orange", "bg-light-purple", "bg-dark-red", "bg-gold", "bg-hot-pink"
 	],
 	images: [
-		"/static/appv2/images/4.jpg", "/static/appv2/images/3.jpg", "/static/appv2/images/2.jpg", "/static/appv2/images/1.jpg", "/static/appv2/images/5.jpg"
+		"/static/images/4.jpg", "/static/images/3.jpg", "/static/images/2.jpg", "/static/images/1.jpg", "/static/images/5.jpg"
 	]
 }

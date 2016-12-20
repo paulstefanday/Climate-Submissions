@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "js": "browserify client/index.js -o static/index.js -g es2040 -i mock-browser",
+    "compile": "watch 'npm run js' 'client/'",
+    "server": "NODE_ENV=development nodemon -L --watch index.js",
+    "start": "npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,27 @@
   "bugs": {
     "url": "https://github.com/paulstefanday/Climate-Submissions/issues"
   },
-  "homepage": "https://github.com/paulstefanday/Climate-Submissions#readme"
+  "homepage": "https://github.com/paulstefanday/Climate-Submissions#readme",
+  "dependencies": {
+    "choo": "4.0.1",
+    "climate-core": "^1.0.0",
+    "countup.js": "^1.7.1",
+    "flag-icon-css": "^2.8.0",
+    "font-awesome": "^4.7.0",
+    "gsap": "^1.19.0",
+    "koa-mount": "^1.3.0",
+    "koa-render": "^0.2.1",
+    "koa-route": "^2.4.2",
+    "koa-static": "^2.0.0",
+    "moment-countdown": "0.0.3",
+    "sheet-router": "^4.1.4",
+    "tachyons": "^4.5.5",
+    "xhr": "^2.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "es2040": "^1.2.4",
+    "watch": "^1.0.1",
+    "nodemon": "^1.11.0"
+  }
 }

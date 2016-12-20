@@ -40,7 +40,7 @@ const button = ({ title, slug }) => (state, prev, send) => {
 	// create link to tab
 	let link = e => {
 		// load page
-		send('location:set', `/v2/competition/${state.location.params.id}/${slug}`)
+		send('location:set', `/competition/${state.location.params.id}/${slug}`)
 		// scroll up div
 		let div = document.getElementById("scrolling")
 		div.scrollTop = 0
